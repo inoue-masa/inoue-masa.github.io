@@ -124,7 +124,8 @@ function timeMeasure(start, end) {
  * @returns answerStringArrayに格納されている任意の文字列を返す
  */
 function getAnswerString() {
-    const answerStringArray = ["mouse", "april", "march", "print", "knife"];
+    const answerStringArray = createAnswerStringArray(answerStringArrayOriginal);
     const answerString = answerStringArray[Math.floor(Math.random()*answerStringArray.length)];
+    console.log(answerString);
     return answerString;
 }
