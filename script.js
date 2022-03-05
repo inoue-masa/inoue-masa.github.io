@@ -61,7 +61,7 @@ const coloringString = function () {
                 flag = 1;
             }
 
-            if (totalCounter === 6) {
+            if (flag === 0 && totalCounter === 7) {
                 //入力が5回終わっている場合の処理
                 flag = 1;
                 document.getElementById("message").textContent = "😭Try again! Push Restart button for a new game!😭";
@@ -74,7 +74,7 @@ const coloringString = function () {
 };
 
 const clear = function () {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 5; j++) {
             document.getElementById(`Letter${i + 1}${j + 1}`).textContent = "";
             document.getElementById(`Letter${i + 1}${j + 1}`).style.backgroundColor = "initial";
@@ -126,6 +126,6 @@ function timeMeasure(start, end) {
 function getAnswerString() {
     const answerStringArray = createAnswerStringArray(answerStringArrayOriginal);
     const answerString = answerStringArray[Math.floor(Math.random()*answerStringArray.length)];
-    console.log(answerString);
+    console.log(`The answer is "${answerString}".`);
     return answerString;
 }
