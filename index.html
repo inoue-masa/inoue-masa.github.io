@@ -9,13 +9,37 @@
 
 <body>
     <h1>Wordle!!</h1>
-    <!-- <div class="textOutput1">
-        <input type="text" id="Letter11" disabled>
-        <input type="text" id="Letter12" disabled>
-        <input type="text" id="Letter13" disabled>
-        <input type="text" id="Letter14" disabled>
-        <input type="text" id="Letter15" disabled>
-    </div> -->
+    <h2>
+        <label class="open" for="pop-up">Rules</label>
+    </h2>
+    <input type="checkbox" id="pop-up">
+    <div class="overlay">
+        <div class="window">
+            <label class="close" for="pop-up">×</label>
+                <ul class="rules-text">
+                    <li>Guess a 5-letter-word! You can try up to <span style="font-weight: bold">6 times</span>.</li>
+                    <li>When a letter and its position are correct, its background turns <span style="background-color:#00FF00; font-weight: bold;">green</span>.</li>
+                    <li>When a letter is only correct, its background turns <span style="background-color:#FFFF00; font-weight: bold;">yellow</span>.</li>
+                    <li>When a letter isn't correct, its background turns <span style="background-color: #888888; font-weight: bold;">gray</span>.</li>
+                </ul> 
+                <div style="margin-left: 30px; margin-top: 30px">
+                    <i style="font-weight: bold;">Example</i><br>
+                    When the answer word is "sound" and you enter "north", the display turns as below.
+                </div>
+                <div style="text-align: center; margin-top: 10px">
+                    <img src="example.png" width="300">
+                </div>
+                <ul>
+                    <li>"n" is contained in "sound" however its position is wrong, so its background turns yellow.</li>
+                    <li>"o" is contained in "sound" and its position is correct, so its background turns green.</li>
+                    <li>"r","t" and "h" aren't contained in "sound", so its background turn gray.</li>
+                </ul>
+                <div style="margin-left:30px; margin-bottom: 20px;">
+                    <u>If you really wanna know the answer, open a console of this site.</u>😉
+                </div>
+        </div>
+    </div>
+    
     <div class="box">
         <p class="column" id="Letter11"></p>
         <p class="column" id="Letter12"></p>
@@ -23,13 +47,7 @@
         <p class="column" id="Letter14"></p>
         <p class="column" id="Letter15"></p>
     </div>
-    <!-- <div class="textOutput2">
-        <input type="text" id="Letter21" disabled>
-        <input type="text" id="Letter22" disabled>
-        <input type="text" id="Letter23" disabled>
-        <input type="text" id="Letter24" disabled>
-        <input type="text" id="Letter25" disabled>
-    </div> -->
+   
     <div class="box">
         <p class="column" id="Letter21"></p>
         <p class="column" id="Letter22"></p>
@@ -37,13 +55,7 @@
         <p class="column" id="Letter24"></p>
         <p class="column" id="Letter25"></p>
     </div>
-    <!-- <div class="textOutput3">
-        <input type="text" id="Letter31" disabled>
-        <input type="text" id="Letter32" disabled>
-        <input type="text" id="Letter33" disabled>
-        <input type="text" id="Letter34" disabled>
-        <input type="text" id="Letter35" disabled>
-    </div> -->
+   
     <div class="box">
         <p class="column" id="Letter31"></p>
         <p class="column" id="Letter32"></p>
@@ -51,13 +63,7 @@
         <p class="column" id="Letter34"></p>
         <p class="column" id="Letter35"></p>
     </div>
-    <!-- <div class="textOutput4">
-        <input type="text" id="Letter41" disabled>
-        <input type="text" id="Letter42" disabled>
-        <input type="text" id="Letter43" disabled>
-        <input type="text" id="Letter44" disabled>
-        <input type="text" id="Letter45" disabled>
-    </div> -->
+   
     <div class="box">
         <p class="column" id="Letter41"></p>
         <p class="column" id="Letter42"></p>
@@ -65,13 +71,7 @@
         <p class="column" id="Letter44"></p>
         <p class="column" id="Letter45"></p>
     </div>
-    <!-- <div class="textOutput5">
-        <input type="text" id="Letter51" disabled>
-        <input type="text" id="Letter52" disabled>
-        <input type="text" id="Letter53" disabled>
-        <input type="text" id="Letter54" disabled>
-        <input type="text" id="Letter55" disabled>
-    </div> -->
+   
     <div class="box">
         <p class="column" id="Letter51"></p>
         <p class="column" id="Letter52"></p>
@@ -79,6 +79,15 @@
         <p class="column" id="Letter54"></p>
         <p class="column" id="Letter55"></p>
     </div>
+
+    <div class="box">
+        <p class="column" id="Letter61"></p>
+        <p class="column" id="Letter62"></p>
+        <p class="column" id="Letter63"></p>
+        <p class="column" id="Letter64"></p>
+        <p class="column" id="Letter65"></p>
+    </div>
+    
     <div class="input">
         <input type="text" id="text-enter">
         <button id="OK">Enter</button>
