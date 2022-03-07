@@ -1,3 +1,5 @@
-# inoue-masa.github.io
+#何をつくったか？
+wordleという英単語あてゲーム
+5文字の英単語を最大6回のトライで当てます
 
-# what is this?
+
