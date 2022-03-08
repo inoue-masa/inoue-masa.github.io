@@ -31,7 +31,7 @@
     
   という部分を1つの関数に入れて書いた(実行タイミングや場合分けを頑張った！)
 - hours:minutes:secondsという時間表示をするための関数を作成した
-- CSSでうまくdivとdisplay:flexを使い，多段表示できるようにした
+- HTML/CSSでうまくdivとdisplay:flexを使い，多段表示できるようにした
 - 正解単語がランダムに選ばれるように，answerString.jsの正解単語リストからランダムに単語を選ぶような関数をscript.jsに記載
 
 # 大変だったこと
