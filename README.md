@@ -19,6 +19,7 @@
 - 答えの隠し表示(consoleに表示されるようにしてある)
 
 # 工夫ポイント
+- できる限りシンプルに Simple is best
 - javascriptのメイン部分はfoundationsで習ったことしか使ってない
 - ルール説明表示画面を作成した
 ([参考リンク](https://rilaks.jp/blog/website-creation/popup-css/))
